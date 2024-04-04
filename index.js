@@ -1,4 +1,20 @@
 
+// 1.verilmish ededin 3-un quvveti olub, olmadigini tapan alqoritm yazin.
+
+// let eded = parseInt(prompt("ededixail edin"))
+// let quvvet = 1;
+
+// while (quvvet < eded) {
+//     quvvet *= 3;
+// }
+
+// if (quvvet === eded) {
+//     console.log(eded + " 3-ün quvvətidir.");
+// } else {
+//     console.log(eded + " 3-ün quvvəti deyil.");
+// }
+
+
 // 3. Verilmis ededin en yaxin asagi kokalti deyerini tapan alqoritm (imisalcun eded 20-dirse 4 qaytarmalidi, 25-dise 5 qaytarmalidi, 16-drisa 4 ve s.)
 
 
@@ -13,14 +29,19 @@
 
 // 4.Verilmis array-deki reqemlerinin cemi 10-dan kicik olan ededlerin sayini tapan alqoritm
 
-// var numbers = [3, 5, 8, 2, 1, 9, 12, 4];
+// let arr = [ 987, 79, 19, 45, 57,913,35,23,80,9];
+// let counter = 0;
 
-
-// var count = 0;
-
-// for (var i = 0; i < numbers.length; i++) {
-//     if (numbers[i] < 10) {
-//         count++;
+// for (let i = 0; i < arr.length; i++) {
+//     let eded = arr[i];
+//     let cem = 0;
+//     while (eded) {
+//         cem += eded - ((eded / 10) | 0) * 10;
+//         eded = (eded / 10) | 0;
+//     }
+//     if (cem < 10) {
+//         counter++;
 //     }
 // }
-// console.log("Toplam 10 dan kiçik olan reqemlerin sayı: " + count);
+
+// console.log(counter);
